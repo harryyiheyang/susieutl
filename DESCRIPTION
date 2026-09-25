@@ -1,0 +1,31 @@
+Package: SuSiEUTL
+Type: Package
+Title: Theta-Coordinate Multi-Ancestry SuSiE from Sufficient Statistics
+Version: 0.0.1
+Authors@R: person(given = "SuSiEUTL", family = "Development Team", email = "not-set@example.org", role = c("aut", "cre"))
+Author: SuSiEUTL Development Team [aut, cre]
+Maintainer: SuSiEUTL Development Team <not-set@example.org>
+Description: Phase-one theta-coordinate multi-ancestry SuSiE inference from
+    centered and standardized sufficient statistics. The package uses fixed
+    theta covariance components, exact joint SNP-by-component SER updates,
+    finite IBSS, optional residual-variance estimation, and direct theta and
+    observed-beta posterior diagnostics.
+License: file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: R (>= 4.2.0)
+SystemRequirements: C++17
+Imports:
+    ashr,
+    mixsqp,
+    mvsusieR (>= 0.3),
+    susieR (>= 0.16.5),
+    Rcpp
+LinkingTo:
+    Rcpp,
+    RcppArmadillo
+Suggests:
+    testthat (>= 3.0.0),
+    CppMatrix
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
